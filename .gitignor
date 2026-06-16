@@ -1,0 +1,3 @@
+cc.env
+__pycache__/
+.idea/
