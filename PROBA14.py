@@ -25,9 +25,9 @@ _model = None
 def get_model():
     global _model
     if _model is None:
-        _model = SentenceTransformer('C:/models/all-MiniLM-L6-v2/')
+        # Библиотека сама скачает модель из сети при первом запуске
+        _model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
     return _model
-
 # ================== ПРОХОДНЫЕ БАЛЛЫ ==================
 PASSING_SCORES = {
     "ФИИТ": 248,
